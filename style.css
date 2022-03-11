@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.dc-contenaire {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dc-row {
+    display: flex;
+}
+
+.dc-col {
+    flex: 1 ;
+}
+
+
+/**/
+
+#dc-header{
+    border-top: 5px solid #28ABE1;
+    background-color: #fff;
+
+}
+
+
+.dc-header-main{
+    display: flex;
+    
+}
+
+.navbar-brand img {
+    
+}
+
+.navbar-nav .nav-item {
+    text-transform: capitalize;
+} 
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+
+.navbar {
+    padding: 0px;
+}
+
+.navbar-nav {
+    padding-left: 50px;
+}
+
+
+li.nav-item {
+    text-align: center;
+    
+}
+li.nav-item:hover {
+    
+}
+
+li.nav-item a {
+    font-size: 18px !important;
+}
+
+li.nav-item a:hover {
+    background-color: #28ABE1;
+    color: #fff !important;
+}
+
+a.nav-link {
+    padding: 45px 20px 30px !important;
+}
+
+.active {
+    background-color: #28ABE1;
+    color: #fff !important;
+}
+
+/**/
+
+.dc-banner {
+    background-color: lightblue;
+}
+
+.banner {
+    background: url(Pascal-slider.png) bottom left no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 51.42vw;
+    max-height: 700px;
+    position: relative;
+    min-height: 400px;
+}
+
+.banner-text {
+
+}
+
+.banner-text p:first-child {
+
+}
+
+ 
+/**/
+
+.box  {
+    text-align: center;
+    padding: 50px;
+    color: #626262;
+}
+
+.box h1 {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+
+.box h3 {
+    margin-bottom: 25px;
+}
+
+.box p {
+    margin-bottom: 25px;
+}
+
+.box span  {
+    font-weight: bold;
+}
+
+#box-blue {
+    background-color: #28ABE1;
+    color: #fff;
+}
+
+
+/**/
+
+.dc-pommier {
+    margin-top: 100px;
+}
+
+.pommier {
+}
+
+.pommier-intro {
+    flex: 1;
+}
+
+.pommier-intro h1 {
+    text-align: justify;
+    margin-bottom: 25px;
+    color: #28ABE1;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+.responsive {
+    width: 90%;
+    height: auto;
+  }
+
+.pommier-disc {
+    flex: 1;
+    text-align: center;
+}
+
+.pommier-disc h1 {
+    font-size: 48px;
+    color: #28ABE1;
+}
+
+.pommier-disc p {
+    text-align: justify;
+    line-height: 1.8em;
+    color: #626262;
+}
+
+/**/
+.blog {
+    margin-top: 100px;
+}
+
+.blog h1.blog-title {
+    color: #28ABE1;
+    text-align: justify;
+    font-size: 28px;
+    font-weight: 100;
+}
+
+
+.dc-row-blog {
+    display: grid;
+    grid-gap: 20px;
+    padding: 25px 0px;
+}
+
+.small-post {
+    grid-column: 1 / span 1;
+    grid-row: 1;
+}
+
+#first {
+    margin-top: -70px;
+}
+
+.big-post {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+.content {
+    padding: 10px 15px 19px 15px;
+}  
+
+.content h1 {
+    color: #28ABE1;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.content p {
+    color: #626262;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.post-btn {
+    background-color: #28ABE1;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .dc-row {
+        flex-direction: column;
+    }
+
+    .dc-col {
+        width: 100%;
+    }
+    
+    .pommier {
+        padding: 0px 25px;
+        text-align: center;
+    }
+
+    .pommier-intro h1 {
+        text-align: center;
+        
+    }
+    
+
+    .pommier-disc {
+        margin-top: 50px;
+    }
+
+    .blog {
+        padding: 0px 25px;
+    }
+    #first {
+        margin-top: -50px;
+    }
+
+    .logo-container {
+    }
+    
+    .navbar {
+    }
+    .navbar-nav {
+        padding-left: 0px;
+    }
+
+    .dc-header-main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .small-post {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+    
+    
+    .big-post {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .navbar-nav {
+        padding-left: 0px;
+    }
+}
